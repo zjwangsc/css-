@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div>
+        <h2>
+            css居中大全
+        </h2>
+        <div class="container">
+            <div>
+                <div>flex居中布局(推荐)</div>
+                <div class="parent" style="display: flex;justify-content: center;align-items: center;">
+                    <div style="width: 60px;height: 20px;background-color: rgb(63, 77, 224);"></div>
+                </div>
+            </div>
+            <div>
+                <div>行内元素水平居中</div>
+                <div class="parent" style="text-align: center;">
+                    <span>hello</span>
+                </div>
+            </div>
+            <div>
+                <div>块级元素水平居中</div>
+                <div class="parent">
+                    <div style="width: 60px;height: 30px;background-color:hotpink;margin: 0 auto;"></div>
+                </div>
+            </div>
+            <div>
+                <div>行内元素垂直居中</div>
+                <!-- line-height的值与.parent中height的值一样 -->
+                <div class="parent" style="line-height: 200px;">
+                    <span>hello</span>
+                </div>
+            </div>
+            <div>
+                <div>块级元素垂直居中:高度固定</div>
+                <div class="parent" style="position: relative;">
+                    <div
+                        style="width: 60px;height: 80px;background-color: skyblue;position: absolute;top: 50%;height: 100px; margin-top: -50px;">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>块级元素垂直居中:高度未定</div>
+                <div class="parent" style="position: relative;">
+                    <div
+                        style="width: 60px;height: 90px;background-color: skyblue;position: absolute;top: 50%;transform: translateY(-50%);">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>块级元素水平+垂直居中:高度确定</div>
+                <div class="parent" style="position: relative;">
+                    <div
+                        style="width: 60px;height: 90px;padding:10px;background-color: skyblue;position: absolute;top: 50%;left: 50%;margin: -55px 0 0 -40px;">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>块级元素水平+垂直居中:高度未定</div>
+                <div class="parent" style="position: relative;">
+                    <div
+                        style="width: 60px;height: 90px;padding:10px;background-color: skyblue;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);">
+                    </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
